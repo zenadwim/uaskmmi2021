@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputHafalan"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#981A8186">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/judulhafalan"
+        android:text="Input Hafalan"
+        android:fontFamily="@font/font2"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namasiswa"
+        android:text="nama siswa"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_below="@+id/judulhafalan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/cardview_dark_background"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Pilih surat yang disetor:"/>
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:id="@+id/spinnersurat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="klik untuk memilih surat"/>
+
+            <EditText
+                android:id="@+id/namaayat"
+                android:layout_marginTop="60dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input ayat yang disetor disini, contoh: 1-5"/>
+
+            <EditText
+                android:id="@+id/tanggal"
+                android:layout_marginTop="90dp"
+                android:textSize="15dp"
+                android:enabled="false"
+                android:text="Input tanggal"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="Input"
+            android:id="@+id/Input"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#1A8186"
+            android:fontFamily="@font/font2"
+            android:text="Input"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:onClick="Edit"
+            android:id="@+id/Edit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#1A8186"
+            android:fontFamily="@font/font2"
+            android:text="Edit"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

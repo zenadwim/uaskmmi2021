@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/layouthafalan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+                <TableRow
+                    android:background="#7032CD32"
+                    android:padding="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:id="@+id/nisnH"
+                            />
+                        <TextView
+                            android:id="@+id/surat"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Surat"/>
+                        <TextView
+                            android:id="@+id/ayat"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ayat"/>
+                        <TextView
+                            android:id="@+id/tanggal"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tanggal"/>
+
+                        <TextView
+                            android:id="@+id/edit"
+                            android:onClick="Edit"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00CED1"
+                            android:gravity="center"
+                            android:text="Edit"/>
+                        <TextView
+                            android:id="@+id/delete"
+                            android:onClick="Delete"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#B22222"
+                            android:gravity="center"
+                            android:text="Delete"/>
+                </TableRow>
+        </TableLayout>
+</LinearLayout>
